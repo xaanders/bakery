@@ -1,0 +1,124 @@
+.list-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.375rem;
+}
+
+@media screen and (max-width: 480px) {
+    .nav {
+        position: relative;
+    }
+    .list-items li {
+        margin-bottom: 1rem;
+    }
+    .list-items li:last-child {
+        margin-bottom: 0;
+    }
+    .list-items {
+        display: block;
+        position: absolute;
+  
+        left: -1000%;
+        top: 1.5rem;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        z-index: 20;
+        padding: 1.5rem;
+        font-size: 2rem;
+        
+        
+        transition: all 0.7s ease-out;
+    }
+
+    .list-items.active {
+        left: -2rem;
+
+    }
+    
+}
+
+.link-item,
+.link-item::visited {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.link-item.active {
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+
+.logo {
+    position: relative;
+}
+
+
+@media screen and (max-width: 480px) {
+    .burger-btn {
+        display: block;
+        position: relative;
+        z-index: 5;
+        width: 1.6rem;
+        height: 1rem;
+        background-color: transparent;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .burger-btn::before,
+    .burger-btn::after {
+        content: "";
+
+    }
+
+    .burger-btn::before,
+    .burger-btn::after,
+    .burger-btn span {
+        position: absolute;
+        left: 0;
+        display: block;
+        width: 100%;
+        background-color: #597266;
+        height: 2px;
+        transition: all 0.3s ease;
+    }
+
+    .burger-btn span {
+        transform: scale(1) translate(0px, -50%);
+
+    }
+
+    .burger-btn::before {
+        bottom: 0;
+    }
+
+    .burger-btn::after {
+        top: 0;
+    }
+
+
+    .burger-btn.active span {
+      left: -1000%;
+    }
+
+    .burger-btn.active::after {
+        transform: rotate(45deg);
+        top: 7px;
+    }
+
+    .burger-btn.active::before {
+        transform: rotate(-45deg);
+        bottom: 7px;
+
+    }
+}
+
+
+
+
+
+
+.list-items {}

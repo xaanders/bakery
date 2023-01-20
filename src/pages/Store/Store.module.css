@@ -1,0 +1,53 @@
+.store {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    padding-top: 1.81rem;
+    border-top: 0.7px solid rgba(0, 0, 0, 0.2);
+}
+
+
+@media screen and (max-width: 900px) {
+    .store {
+        gap: 1.25rem
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .store {
+        flex-direction: column;
+
+    }
+}
+
+
+h3 {
+    font-size: 40px;
+    line-height: 39px;
+    color: #463A3A;
+}
+
+@media screen and (max-width: 480px) {
+    h3 {
+        display: none;
+    }
+}
+
+.message {
+    height: 36px;
+}
+
+.message span {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #463A3A;
+}
+
+.message span::after {
+    content: url('../../assets/icons/validation/success-message.svg')
+}

@@ -1,0 +1,163 @@
+
+.item {
+    justify-self: center;
+    align-self: center;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    position: relative;
+    height: 258px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 600px) {
+    .item {
+        flex-direction: column-reverse;
+        padding: 14px 26px;
+    }
+}
+
+.info {
+    padding: 0 24px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .info {
+        padding: 0 1rem;
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .info {
+        padding: 0;
+
+    }
+
+}
+
+.item-title {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+
+    color: #463A3A;
+}
+
+
+.activities {
+    display: flex;
+    justify-content: space-between;
+}
+
+.details {
+    font-size: 14px;
+    line-height: 30px;
+
+    text-decoration-line: underline;
+
+    color: #AEAEAE;
+}
+
+
+.img img {
+    display: block;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .img {
+        width: 246px;
+        margin: 0 auto;
+
+        height: 186px;
+        align-self: cetnter
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .img {
+        width: 246px;
+
+        height: 186px;
+        align-self: center
+    }
+
+    .img img {
+        width: 100%;
+    }
+
+
+
+}
+
+@media screen and (max-width: 350px) {
+
+    .img {
+        width: 200px;
+
+        height: 140px;
+    }
+
+
+
+}
+
+.add-to-cart {
+    background-color: #fff;
+}
+
+.add-to-cart span::after {
+    content: url('../../../assets/icons/cart.svg')
+}
+
+@media (max-width: 600px) {
+    .add-to-cart {
+        position: absolute;
+        bottom: 25px;
+        right: 27px
+    }
+
+    .add-to-cart span::after {
+        content: url('../../../assets/icons/cart-mobile.svg')
+    }
+
+
+
+}
+
+.price {
+    position: absolute;
+    top: 0;
+    right: 11px;
+    width: 48px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #597266;
+    border-radius: 0px 0px 4px 4px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    z-index: 10;
+}
+
+
+@media (max-width: 600px) {
+    .price {
+        right: 27px;
+    }
+
+
+}

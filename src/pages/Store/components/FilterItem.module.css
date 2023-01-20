@@ -1,0 +1,60 @@
+
+.box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 204px;
+}
+
+.link {
+    background-color: #fff;
+    border-radius: 4px;
+    color: #AAA1A1;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    text-align: center;
+    width: 100%;
+    min-height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.link.active {
+    background: #597266;
+    box-shadow: 0px 0px 20px rgba(70, 58, 58, 0.5);
+    position: absolute;
+    width: 115%;
+    min-height: 56px;
+    color: #fff;
+    transition: all 0.5s ease;
+    z-index: 5;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .box {
+        min-width: 170px;
+    }
+
+  
+}
+
+@media screen and (max-width: 768px) {
+
+    .box {
+        min-width: 149px;
+        /* min-height: 40px; */
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+
+   
+    .box {
+        min-width: 100px;
+        /* min-height: 40px; */
+    }
+}

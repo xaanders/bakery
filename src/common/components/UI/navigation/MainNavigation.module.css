@@ -1,0 +1,40 @@
+.header {
+    padding: 1.875rem 0 0.75rem 0;
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 1rem 0 1rem 0;
+    }
+    
+}
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "social menu actions";
+}
+
+@media screen and (max-width: 769px) {
+    .menu {
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: max-content 1fr;
+        grid-template-areas:
+            "social actions"
+            "menu menu";
+
+
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    
+    .menu {
+        grid-template-rows: 1fr;
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas: unset
+    }
+}

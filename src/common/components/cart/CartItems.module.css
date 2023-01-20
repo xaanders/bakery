@@ -1,0 +1,148 @@
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    overflow: auto;
+    /* max-height: 700px; */
+}
+
+.items::-webkit-scrollbar {
+    width: 5px;
+
+}
+
+.items::-webkit-scrollbar-track {
+    background: #F1F1F1;
+}
+
+.items::-webkit-scrollbar-thumb {
+    background: #DCDCDC;
+}
+
+.items::-webkit-scrollbar-thumb:hover {
+    background: #b9b9b9;
+}
+
+.cart-item {
+
+    grid-row-start: 2;
+
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 2fr 0.5fr;
+    align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+    .cart-item {
+
+        grid-template-columns: 1fr 2fr 102px 0.5fr;
+    }
+}
+
+.img-box {
+    display: flex;
+    align-items: center;
+    grid-column-start: 1;
+    width: 88px;
+    overflow: hidden;
+}
+
+
+.img-box img {
+    transform: translate(-16px, 0);
+    max-width: 100%;
+
+}
+
+@media screen and (max-width: 480px) {
+    .img-box {
+        width: 68px;
+    }
+    .img-box img {
+        transform: unset;
+        max-width: 100%;
+    
+    }
+}
+
+.price {
+    grid-column-start: 3;
+    justify-self: center;
+    font-size: 1.25rem;
+    line-height: 1.2;
+
+}
+
+
+.quantity {
+    justify-self: center;
+    font-size: 20px;
+    line-height: 24px;
+    grid-column-start: 4;
+    display: flex;
+    align-items: center;
+    color: #463A3A;
+    border: 1px solid #463A3A;
+    padding: 0.5rem 0
+}
+
+
+.cross {
+    color: #A1A1A1;
+    font-size: 2rem;
+    grid-column-start: 5;
+    justify-self: center;
+    cursor: pointer;
+    background-color: white;
+}
+
+.quantity span {
+    padding: 0 15px;
+    border: 1px solid #463A3A;
+    border-top: none;
+    border-bottom: none;
+    color: #463A3A;
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
+
+.quantity button {
+
+    background-color: #FFFFFF;
+    padding: 4px 12px;
+}
+
+@media screen and (max-width: 480px) {
+    .name {
+        grid-column-start: 1;
+        grid-row-start: 2;
+
+    }
+
+    .price {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        justify-self: center;   
+    }
+
+    .quantity {
+
+        grid-column-start: 3;
+    }
+
+    .cross {
+
+        grid-column-start: 4;
+        margin-left: 10px;
+    }
+    
+
+}
+
+@media screen and (max-width: 370px) {
+    .price {
+        
+        justify-self: start;   
+
+    }
+}
