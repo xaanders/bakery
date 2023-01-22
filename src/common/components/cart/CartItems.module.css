@@ -49,7 +49,7 @@
 
 
 .img-box img {
-    transform: translate(-16px, 0);
+    /* transform: translate(-16px, 0); */
     max-width: 100%;
 
 }

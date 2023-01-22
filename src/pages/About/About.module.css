@@ -126,3 +126,13 @@
         border-radius: 750px 550px 750px 570px / 550px 750px 650px 750px;
     }
 }
+
+.actions {
+    margin-top: 4rem;
+    text-align: center;
+    height: 100%;
+}
+.link-button {
+    position: relative;
+    height: 100%;
+}

@@ -24,7 +24,7 @@ function Footer() {
 
           <div className={classes.content}>
             <div className={classes.logo}>
-              <img src={logoLight} alt="Valeria Bakery" />
+              <img src={'/assets/icons/bakery-logo-light.svg'} alt="Valeria Bakery" />
             </div>
             <Contacts />
 

@@ -63,7 +63,10 @@
     color: #AEAEAE;
 }
 
-
+.img {
+    overflow: hidden;
+    max-width: 191px;
+}
 .img img {
     display: block;
     max-width: 100%;
@@ -117,7 +120,7 @@
 }
 
 .add-to-cart span::after {
-    content: url('../../../assets/icons/cart.svg')
+    content: url('../../../../public/assets/icons/cart.svg')
 }
 
 @media (max-width: 600px) {
@@ -128,7 +131,7 @@
     }
 
     .add-to-cart span::after {
-        content: url('../../../assets/icons/cart-mobile.svg')
+        content: url('../../../../public/assets/icons/cart-mobile.svg')
     }
 
 
@@ -139,8 +142,8 @@
     position: absolute;
     top: 0;
     right: 11px;
-    width: 48px;
     height: 44px;
+    padding: 0 10px;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -10,7 +10,7 @@ function StoreItem({item}) {
             </div>
 
             <div className={classes.info}>
-                <h4 className={classes['item-title']}>{item.title}</h4>
+                <h4 className={classes['item-title']}>{item.name}</h4>
 
                 <div className={classes.activities}>
                     <Link className={classes.details} to='/'>Details...</Link>

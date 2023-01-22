@@ -7,7 +7,7 @@ function FilterItem(props) {
     <div className={classes.box}>
       <NavLink className={navData =>
         navData.isActive ? `${classes.link} ${classes.active}` : classes.link}
-        to={`filter/${props.item}`}>
+        to={`/store/${props.item}`}>
         {props.item}
       </NavLink>
     </div>

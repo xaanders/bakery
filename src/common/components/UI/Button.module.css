@@ -1,4 +1,4 @@
-.main-btn {
+.btn {
   font-style: normal;
   font-weight: 500;
   font-size: 1.25rem;
@@ -11,7 +11,7 @@
 }
 
 @media screen and (max-width: 769px) {
-  .main-btn {
+  .btn {
     font-size: 1rem;
     padding: 0.69rem 2.15rem;
 

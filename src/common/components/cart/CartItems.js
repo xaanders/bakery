@@ -6,7 +6,7 @@ function CartItems() {
         <div className={classes.items}>
             <div className={classes['cart-item']}>
                 <div className={classes['img-box']}>
-                    <img src={require('../../../assets/images/products/1.jpg')} alt="cake" />
+                    <img src={'/assets/images/products/breads/1.jpg'} alt="cake" />
                 </div>
 
                 <div className={classes.name}>
@@ -26,72 +26,7 @@ function CartItems() {
 
 
             </div>
-            <div className={classes['cart-item']}>
-                <div className={classes['img-box']}>
-                    <img src={require('../../../assets/images/products/1.jpg')} alt="cake" />
-                </div>
-
-                <div className={classes.name}>
-                    <p>Berry Cake</p>
-                </div>
-                <div className={classes.price}>
-
-                    <p>24$</p>
-                </div>
-
-                <div className={classes.quantity}>
-                    <button type="button">+</button>
-                    <span>{1}</span>
-                    <button type="button">-</button>
-                </div>
-                <button type="button" className={classes.cross}>&times;</button>
-
-
-            </div>
-            <div className={classes['cart-item']}>
-                <div className={classes['img-box']}>
-                    <img src={require('../../../assets/images/products/1.jpg')} alt="cake" />
-                </div>
-
-                <div className={classes.name}>
-                    <p>Berry Cake</p>
-                </div>
-                <div className={classes.price}>
-
-                    <p>24$</p>
-                </div>
-
-                <div className={classes.quantity}>
-                    <button type="button">+</button>
-                    <span>{1}</span>
-                    <button type="button">-</button>
-                </div>
-                <button type="button" className={classes.cross}>&times;</button>
-
-
-            </div>
-            <div className={classes['cart-item']}>
-                <div className={classes['img-box']}>
-                    <img src={require('../../../assets/images/products/1.jpg')} alt="cake" />
-                </div>
-
-                <div className={classes.name}>
-                    <p>Berry Cake</p>
-                </div>
-                <div className={classes.price}>
-
-                    <p>24$</p>
-                </div>
-
-                <div className={classes.quantity}>
-                    <button type="button">+</button>
-                    <span>{1}</span>
-                    <button type="button">-</button>
-                </div>
-                <button type="button" className={classes.cross}>&times;</button>
-
-
-            </div>
+            
         </div>
     )
 }

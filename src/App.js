@@ -6,7 +6,6 @@ import Home from './pages/Home/Home'
 import About from './pages/About/About'
 import Store from './pages/Store/Store'
 import Contacts from './pages/Contacts/Contacts'
-import StoreItems from './pages/Store/components/StoreItems'
 
 function App() {
   return (
@@ -19,14 +18,10 @@ function App() {
         <Route path="/about" element={<About />}>
           <Route path="cart" element={<Cart />} />
         </Route>
-        <Route path="/store" element={<Store />}>
+        <Route path="/store/:filterName" element={<Store />}>
           <Route path="cart" element={<Cart />} />
-
-          <Route path="filter/:filterName" element={<StoreItems />}>
-            <Route path="cart" element={<Cart />} />
-
-          </Route>
         </Route>
+        <Route path="/store/*" element={<Navigate to='/store/all' replace />} />
         <Route path="/contacts" element={<Contacts />}>
           <Route path="cart" element={<Cart />} />
         </Route>

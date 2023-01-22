@@ -5,7 +5,11 @@ export default function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if (pathname.search(/\/store\/\w/ig)) {
+      window.scrollTo(0, 0);
+    }
+
+
   }, [pathname]);
 
   return null;

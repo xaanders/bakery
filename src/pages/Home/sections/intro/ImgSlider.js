@@ -1,15 +1,12 @@
 import React, { useState } from 'react'
 import classes from './ImgSlider.module.css'
-import homeBg from '../../../../assets/images/background/home-bg.jpg';
-import homeBg2 from '../../../../assets/images/background/home-bg-2.jpg';
-import homeBg3 from '../../../../assets/images/background/home-bg-3.jpg';
-import homeBg4 from '../../../../assets/images/background/home-bg-4.jpg';
+
 
 const images = [
-    { img: homeBg, title: 'home', id: 0 },
-    { img: homeBg2, title: 'home2', id: 1},
-    { img: homeBg3, title: 'home3', id: 2},
-    { img: homeBg4, title: 'home4', id: 3},
+    { img: '/assets/images/background/home-bg.jpg', title: 'home', id: 0 },
+    { img: '/assets/images/background/home-bg-2.jpg', title: 'home2', id: 1},
+    { img: '/assets/images/background/home-bg-3.jpg', title: 'home3', id: 2},
+    { img: '/assets/images/background/home-bg-4.jpg', title: 'home4', id: 3},
 ];
 
 function ImgSlider() {

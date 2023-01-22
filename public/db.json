@@ -1,0 +1,235 @@
+{
+    "items": [
+        {
+            "name": "Bread",
+            "description": "Baked food product made of flour or meal that is moistened, kneaded, and sometimes fermented. A major food since prehistoric times, it has been made in various forms using a variety of ingredients and methods throughout the world.",
+            "price": "4.99",
+            "img": "/assets/images/products/breads/1.jpg",
+            "type": "bread"
+        },
+        {
+            "name": "Bread 2",
+            "description": "Baked food product made of flour or meal that is moistened, kneaded, and sometimes fermented. A major food since prehistoric times, it has been made in various forms using a variety of ingredients and methods throughout the world.",
+            "price": "6.99",
+            "img": "/assets/images/products/breads/2.jpg",
+            "type": "bread"
+        },
+        {
+            "name": "Bread 3",
+            "description": "Baked food product made of flour or meal that is moistened, kneaded, and sometimes fermented. A major food since prehistoric times, it has been made in various forms using a variety of ingredients and methods throughout the world.",
+            "price": "5.99",
+            "img": "/assets/images/products/breads/3.jpg",
+            "type": "bread"
+        },
+        {
+            "name": "Bread 4",
+            "description": "Baked food product made of flour or meal that is moistened, kneaded, and sometimes fermented. A major food since prehistoric times, it has been made in various forms using a variety of ingredients and methods throughout the world.",
+            "price": "3.99",
+            "img": "/assets/images/products/breads/4.jpg",
+            "type": "bread"
+        },
+        {
+            "name": "Cake 1",
+            "description": "Cake is a flour confection made from flour, sugar, and other ingredients, and is usually baked. In their oldest forms, cakes were modifications of bread, but cakes now cover a wide range of preparations that can be simple or elaborate, and which share features with desserts such as pastries, meringues, custards, and pies.The most common ingredients include flour, sugar, eggs, fat (such as butter, oil or margarine), a liquid, and a leavening agent, such as baking soda or baking powder. Common additional ingredients include dried, candied, or fresh fruit, nuts, cocoa, and extracts such as vanilla, with numerous substitutions for the primary ingredients. Cakes can also be filled with fruit preserves, nuts or dessert sauces (like custard, jelly, cooked fruit, whipped cream or syrups),[1] iced with buttercream or other icings, and decorated with marzipan, piped borders, or candied fruit.",
+            "price": "6.99",
+            "img": "/assets/images/products/cakes/1.jpg",
+            "type": "cakes"
+        },
+        {
+            "name": "Cake 2",
+            "description": "Cake is a flour confection made from flour, sugar, and other ingredients, and is usually baked. In their oldest forms, cakes were modifications of bread, but cakes now cover a wide range of preparations that can be simple or elaborate, and which share features with desserts such as pastries, meringues, custards, and pies.The most common ingredients include flour, sugar, eggs, fat (such as butter, oil or margarine), a liquid, and a leavening agent, such as baking soda or baking powder. Common additional ingredients include dried, candied, or fresh fruit, nuts, cocoa, and extracts such as vanilla, with numerous substitutions for the primary ingredients. Cakes can also be filled with fruit preserves, nuts or dessert sauces (like custard, jelly, cooked fruit, whipped cream or syrups),[1] iced with buttercream or other icings, and decorated with marzipan, piped borders, or candied fruit.",
+            "price": "6.99",
+            "img": "/assets/images/products/cakes/2.jpg",
+            "type": "cakes"
+        },
+        {
+            "name": "Cake 3",
+            "description": "Cake is a flour confection made from flour, sugar, and other ingredients, and is usually baked. In their oldest forms, cakes were modifications of bread, but cakes now cover a wide range of preparations that can be simple or elaborate, and which share features with desserts such as pastries, meringues, custards, and pies.The most common ingredients include flour, sugar, eggs, fat (such as butter, oil or margarine), a liquid, and a leavening agent, such as baking soda or baking powder. Common additional ingredients include dried, candied, or fresh fruit, nuts, cocoa, and extracts such as vanilla, with numerous substitutions for the primary ingredients. Cakes can also be filled with fruit preserves, nuts or dessert sauces (like custard, jelly, cooked fruit, whipped cream or syrups),[1] iced with buttercream or other icings, and decorated with marzipan, piped borders, or candied fruit.",
+            "price": "6.99",
+            "img": "/assets/images/products/cakes/3.jpg",
+            "type": "cakes"
+        },
+        {
+            "name": "Cake 4",
+            "description": "Cake is a flour confection made from flour, sugar, and other ingredients, and is usually baked. In their oldest forms, cakes were modifications of bread, but cakes now cover a wide range of preparations that can be simple or elaborate, and which share features with desserts such as pastries, meringues, custards, and pies.The most common ingredients include flour, sugar, eggs, fat (such as butter, oil or margarine), a liquid, and a leavening agent, such as baking soda or baking powder. Common additional ingredients include dried, candied, or fresh fruit, nuts, cocoa, and extracts such as vanilla, with numerous substitutions for the primary ingredients. Cakes can also be filled with fruit preserves, nuts or dessert sauces (like custard, jelly, cooked fruit, whipped cream or syrups),[1] iced with buttercream or other icings, and decorated with marzipan, piped borders, or candied fruit.",
+            "price": "6.99",
+            "img": "/assets/images/products/cakes/4.jpg",
+            "type": "cakes"
+        },
+        {
+            "name": "Cake 5",
+            "description": "Cake is a flour confection made from flour, sugar, and other ingredients, and is usually baked. In their oldest forms, cakes were modifications of bread, but cakes now cover a wide range of preparations that can be simple or elaborate, and which share features with desserts such as pastries, meringues, custards, and pies.The most common ingredients include flour, sugar, eggs, fat (such as butter, oil or margarine), a liquid, and a leavening agent, such as baking soda or baking powder. Common additional ingredients include dried, candied, or fresh fruit, nuts, cocoa, and extracts such as vanilla, with numerous substitutions for the primary ingredients. Cakes can also be filled with fruit preserves, nuts or dessert sauces (like custard, jelly, cooked fruit, whipped cream or syrups),[1] iced with buttercream or other icings, and decorated with marzipan, piped borders, or candied fruit.",
+            "price": "6.99",
+            "img": "/assets/images/products/cakes/5.jpg",
+            "type": "cakes"
+        },
+        {
+            "name": "Cake 6",
+            "description": "Cake is a flour confection made from flour, sugar, and other ingredients, and is usually baked. In their oldest forms, cakes were modifications of bread, but cakes now cover a wide range of preparations that can be simple or elaborate, and which share features with desserts such as pastries, meringues, custards, and pies.The most common ingredients include flour, sugar, eggs, fat (such as butter, oil or margarine), a liquid, and a leavening agent, such as baking soda or baking powder. Common additional ingredients include dried, candied, or fresh fruit, nuts, cocoa, and extracts such as vanilla, with numerous substitutions for the primary ingredients. Cakes can also be filled with fruit preserves, nuts or dessert sauces (like custard, jelly, cooked fruit, whipped cream or syrups),[1] iced with buttercream or other icings, and decorated with marzipan, piped borders, or candied fruit.",
+            "price": "6.99",
+            "img": "/assets/images/products/cakes/6.jpg",
+            "type": "cakes"
+        },
+        {
+            "name": "Cake 7",
+            "description": "Cake is a flour confection made from flour, sugar, and other ingredients, and is usually baked. In their oldest forms, cakes were modifications of bread, but cakes now cover a wide range of preparations that can be simple or elaborate, and which share features with desserts such as pastries, meringues, custards, and pies.The most common ingredients include flour, sugar, eggs, fat (such as butter, oil or margarine), a liquid, and a leavening agent, such as baking soda or baking powder. Common additional ingredients include dried, candied, or fresh fruit, nuts, cocoa, and extracts such as vanilla, with numerous substitutions for the primary ingredients. Cakes can also be filled with fruit preserves, nuts or dessert sauces (like custard, jelly, cooked fruit, whipped cream or syrups),[1] iced with buttercream or other icings, and decorated with marzipan, piped borders, or candied fruit.",
+            "price": "6.99",
+            "img": "/assets/images/products/cakes/7.jpg",
+            "type": "cakes"
+        },
+        {
+            "name": "Cake 8",
+            "description": "Cake is a flour confection made from flour, sugar, and other ingredients, and is usually baked. In their oldest forms, cakes were modifications of bread, but cakes now cover a wide range of preparations that can be simple or elaborate, and which share features with desserts such as pastries, meringues, custards, and pies.The most common ingredients include flour, sugar, eggs, fat (such as butter, oil or margarine), a liquid, and a leavening agent, such as baking soda or baking powder. Common additional ingredients include dried, candied, or fresh fruit, nuts, cocoa, and extracts such as vanilla, with numerous substitutions for the primary ingredients. Cakes can also be filled with fruit preserves, nuts or dessert sauces (like custard, jelly, cooked fruit, whipped cream or syrups),[1] iced with buttercream or other icings, and decorated with marzipan, piped borders, or candied fruit.",
+            "price": "6.99",
+            "img": "/assets/images/products/cakes/8.jpg",
+            "type": "cakes"
+        },
+        {
+            "name": "Cake 9",
+            "description": "Cake is a flour confection made from flour, sugar, and other ingredients, and is usually baked. In their oldest forms, cakes were modifications of bread, but cakes now cover a wide range of preparations that can be simple or elaborate, and which share features with desserts such as pastries, meringues, custards, and pies.The most common ingredients include flour, sugar, eggs, fat (such as butter, oil or margarine), a liquid, and a leavening agent, such as baking soda or baking powder. Common additional ingredients include dried, candied, or fresh fruit, nuts, cocoa, and extracts such as vanilla, with numerous substitutions for the primary ingredients. Cakes can also be filled with fruit preserves, nuts or dessert sauces (like custard, jelly, cooked fruit, whipped cream or syrups),[1] iced with buttercream or other icings, and decorated with marzipan, piped borders, or candied fruit.",
+            "price": "6.99",
+            "img": "/assets/images/products/cakes/9.jpg",
+            "type": "cakes"
+        },
+        {
+            "name": "Cake 10",
+            "description": "Cake is a flour confection made from flour, sugar, and other ingredients, and is usually baked. In their oldest forms, cakes were modifications of bread, but cakes now cover a wide range of preparations that can be simple or elaborate, and which share features with desserts such as pastries, meringues, custards, and pies.The most common ingredients include flour, sugar, eggs, fat (such as butter, oil or margarine), a liquid, and a leavening agent, such as baking soda or baking powder. Common additional ingredients include dried, candied, or fresh fruit, nuts, cocoa, and extracts such as vanilla, with numerous substitutions for the primary ingredients. Cakes can also be filled with fruit preserves, nuts or dessert sauces (like custard, jelly, cooked fruit, whipped cream or syrups),[1] iced with buttercream or other icings, and decorated with marzipan, piped borders, or candied fruit.",
+            "price": "6.99",
+            "img": "/assets/images/products/cakes/10.jpg",
+            "type": "cakes"
+        },
+        {
+            "name": "Cake 11",
+            "description": "Cake is a flour confection made from flour, sugar, and other ingredients, and is usually baked. In their oldest forms, cakes were modifications of bread, but cakes now cover a wide range of preparations that can be simple or elaborate, and which share features with desserts such as pastries, meringues, custards, and pies.The most common ingredients include flour, sugar, eggs, fat (such as butter, oil or margarine), a liquid, and a leavening agent, such as baking soda or baking powder. Common additional ingredients include dried, candied, or fresh fruit, nuts, cocoa, and extracts such as vanilla, with numerous substitutions for the primary ingredients. Cakes can also be filled with fruit preserves, nuts or dessert sauces (like custard, jelly, cooked fruit, whipped cream or syrups),[1] iced with buttercream or other icings, and decorated with marzipan, piped borders, or candied fruit.",
+            "price": "6.99",
+            "img": "/assets/images/products/cakes/11.jpg",
+            "type": "cakes"
+        },
+        {
+            "name": "Croissant 1",
+            "description": "A croissant is a buttery, crescent-shaped French pastry. Good croissants are light, flaky, and delicately sweet. Enjoy one with a cup of coffee — preferably while sitting in a charming Parisian cafe.",
+            "price": "6.99",
+            "img": "/assets/images/products/croissants/1.jpg",
+            "type": "croissants"
+        },
+        {
+            "name": "Croissant 2",
+            "description": "A croissant is a buttery, crescent-shaped French pastry. Good croissants are light, flaky, and delicately sweet. Enjoy one with a cup of coffee — preferably while sitting in a charming Parisian cafe.",
+            "price": "6.99",
+            "img": "/assets/images/products/croissants/2.jpg",
+            "type": "croissants"
+        },
+        {
+            "name": "Cupcake 1",
+            "description": "Cupcake (also British English: fairy cake; Hiberno-English: bun) is a small cake designed to serve one person, which may be baked in a small thin paper or aluminum cup. As with larger cakes, frosting and other cake decorations such as fruit and candy may be applied.",
+            "price": "2.99",
+            "img": "/assets/images/products/cupcakes/1.jpg",
+            "type": "cupcakes"
+        },
+         {
+            "name": "Cupcake 2",
+            "description": "Cupcake (also British English: fairy cake; Hiberno-English: bun) is a small cake designed to serve one person, which may be baked in a small thin paper or aluminum cup. As with larger cakes, frosting and other cake decorations such as fruit and candy may be applied.",
+            "price": "3.99",
+            "img": "/assets/images/products/cupcakes/2.jpg",
+            "type": "cupcakes"
+        },
+        {
+            "name": "Cupcake 3",
+            "description": "Cupcake (also British English: fairy cake; Hiberno-English: bun) is a small cake designed to serve one person, which may be baked in a small thin paper or aluminum cup. As with larger cakes, frosting and other cake decorations such as fruit and candy may be applied.",
+            "price": "4.99",
+            "img": "/assets/images/products/cupcakes/3.jpg",
+            "type": "cupcakes"
+        },
+        {
+            "name": "Danish 1",
+            "description": "A Danish pastry, often known as simply “a Danish”, is a layered, sweet pastry baked with Danish pastry traditions. This type of baking involves using yeast-leavened dough or puff pastry with added ingredients such as butter, eggs, milk, cream, and sugar to make the pastries richer and sweeter.",
+            "price": "2.99",
+            "img": "/assets/images/products/danishes/1.jpg",
+            "type": "danishes"
+        },
+        {
+            "name": "Danish 2",
+            "description": "A Danish pastry, often known as simply “a Danish”, is a layered, sweet pastry baked with Danish pastry traditions. This type of baking involves using yeast-leavened dough or puff pastry with added ingredients such as butter, eggs, milk, cream, and sugar to make the pastries richer and sweeter.",
+            "price": "2.99",
+            "img": "/assets/images/products/danishes/2.jpg",
+            "type": "danishes"
+        },
+        {
+            "name": "Danish 3",
+            "description": "A Danish pastry, often known as simply “a Danish”, is a layered, sweet pastry baked with Danish pastry traditions. This type of baking involves using yeast-leavened dough or puff pastry with added ingredients such as butter, eggs, milk, cream, and sugar to make the pastries richer and sweeter.",
+            "price": "4.99",
+            "img": "/assets/images/products/danishes/3.jpg",
+            "type": "danishes"
+        },
+        {
+            "name": "Danish 4",
+            "description": "A Danish pastry, often known as simply “a Danish”, is a layered, sweet pastry baked with Danish pastry traditions. This type of baking involves using yeast-leavened dough or puff pastry with added ingredients such as butter, eggs, milk, cream, and sugar to make the pastries richer and sweeter.",
+            "price": "3.99",
+            "img": "/assets/images/products/danishes/4.jpg",
+            "type": "danishes"
+        },
+        {
+            "name": "Danish 5",
+            "description": "A Danish pastry, often known as simply “a Danish”, is a layered, sweet pastry baked with Danish pastry traditions. This type of baking involves using yeast-leavened dough or puff pastry with added ingredients such as butter, eggs, milk, cream, and sugar to make the pastries richer and sweeter.",
+            "price": "2.99",
+            "img": "/assets/images/products/danishes/5.jpg",
+            "type": "danishes"
+        },
+        {
+            "name": "Danish 6",
+            "description": "A Danish pastry, often known as simply “a Danish”, is a layered, sweet pastry baked with Danish pastry traditions. This type of baking involves using yeast-leavened dough or puff pastry with added ingredients such as butter, eggs, milk, cream, and sugar to make the pastries richer and sweeter.",
+            "price": "3.99",
+            "img": "/assets/images/products/danishes/6.jpg",
+            "type": "danishes"
+        },
+        {
+            "name": "Donut 1",
+            "description": "A doughnut or donut is a type of food made from leavened fried dough. It is popular in many countries and is prepared in various forms as a sweet snack that can be homemade or purchased in bakeries, supermarkets, food stalls, and franchised specialty vendors.",
+            "price": "2.99",
+            "img": "/assets/images/products/donuts/1.jpg",
+            "type": "donuts"
+        },
+         {
+            "name": "Donut 2",
+            "description": "A doughnut or donut is a type of food made from leavened fried dough. It is popular in many countries and is prepared in various forms as a sweet snack that can be homemade or purchased in bakeries, supermarkets, food stalls, and franchised specialty vendors.",
+            "price": "3.99",
+            "img": "/assets/images/products/donuts/2.jpg",
+            "type": "donuts"
+        },
+        {
+            "name": "Donut 3",
+            "description": "A doughnut or donut is a type of food made from leavened fried dough. It is popular in many countries and is prepared in various forms as a sweet snack that can be homemade or purchased in bakeries, supermarkets, food stalls, and franchised specialty vendors.",
+            "price": "4.99",
+            "img": "/assets/images/products/donuts/3.jpg",
+            "type": "donuts"
+        },
+        {
+            "name": "Pie 1",
+            "description": "Dish made by lining a shallow container with pastry and filling the container with a sweet or savoury mixture. A top crust may be added; the pie is baked until the crust is crisp and the filling is cooked through.",
+            "price": "2.99",
+            "img": "/assets/images/products/pies/1.jpg",
+            "type": "pies"
+        },
+        {
+            "name": "Pie 2",
+            "description": "Dish made by lining a shallow container with pastry and filling the container with a sweet or savoury mixture. A top crust may be added; the pie is baked until the crust is crisp and the filling is cooked through.",
+            "price": "2.99",
+            "img": "/assets/images/products/pies/2.jpg",
+            "type": "pies"
+        },
+        {
+            "name": "Pie 3",
+            "description": "Dish made by lining a shallow container with pastry and filling the container with a sweet or savoury mixture. A top crust may be added; the pie is baked until the crust is crisp and the filling is cooked through.",
+            "price": "4.99",
+            "img": "/assets/images/products/pies/3.jpg",
+            "type": "pies"
+        },
+        {
+            "name": "Pie 4",
+            "description": "Dish made by lining a shallow container with pastry and filling the container with a sweet or savoury mixture. A top crust may be added; the pie is baked until the crust is crisp and the filling is cooked through.",
+            "price": "3.99",
+            "img": "/assets/images/products/pies/4.jpg",
+            "type": "pies"
+        }
+    ]
+}

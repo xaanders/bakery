@@ -1,7 +1,5 @@
 import React from 'react'
 import classes from './NavActions.module.css';
-import SearchSvg from '../../../../assets/icons/search.svg';
-import CartSvg from '../../../../assets/icons/cart.svg';
 import { Link, useLocation } from 'react-router-dom';
 
 
@@ -14,12 +12,12 @@ function NavActions() {
                 <input className={classes.input} name="search" type='text' />
 
                 <div className={classes.search}>
-                    <img src={SearchSvg} alt="search" />
+                    <img src={'/assets/icons/search.svg'} alt="search" />
 
                 </div>
             </form>
             <Link to={`${location.pathname}/cart`} className={classes.cart}>
-                <img src={CartSvg} alt="cart" />
+                <img src={'/assets/icons/cart.svg'} alt="cart" />
                 <span>{1}</span>
             </Link>
         </div>

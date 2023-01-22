@@ -106,24 +106,24 @@
 }
 
 .uniq::before {
-    background-image: url('../../../../../assets/images/home/cards/uniq.jpg');
+    background-image: url('../../../../../../public/assets/images/home/cards/uniq.jpg');
     background-size: cover;
 }
 
 .exp::before {
-    background-image: url('../../../../../assets/images/home/cards/uniq.jpg');
+    background-image: url('../../../../../../public/assets/images/home/cards/uniq.jpg');
     background-size: cover;
 
 }
 
 .price::before {
-    background-image: url('../../../../../assets/images/home/cards/price.jpg');
+    background-image: url('../../../../../../public/assets/images/home/cards/price.jpg');
     background-size: cover;
 
 }
 
 .smile::before {
-    background-image: url('../../../../../assets/images/home/cards/smile.jpg');
+    background-image: url('../../../../../../public/assets/images/home/cards/smile.jpg');
     background-size: cover;
 
 }

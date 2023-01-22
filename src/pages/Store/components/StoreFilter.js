@@ -2,7 +2,7 @@ import React from 'react'
 import FilterItem from './FilterItem';
 import classes from './StoreFilter.module.css';
 
-const filters = ['breads', 'croissants', 'cakes', 'cupcakes', 'pies', 'danishes', 'donuts'];
+const filters = ['bread', 'croissants', 'cakes', 'cupcakes', 'pies', 'danishes', 'donuts'];
 
 function StoreFilter() {
     return (

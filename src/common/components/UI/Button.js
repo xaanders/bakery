@@ -7,9 +7,9 @@ function Button({ content, type = 'button', link = null }) {
     <>
       {link
         ?
-        <Link className={classes['main-btn']} to={link}>{content}</Link >
+        <Link className={classes['btn']} to={link}>{content}</Link >
         :
-        <button type={type} className={classes['main-btn']}>
+        <button type={type} className={classes['btn']}>
           {content}
         </button>}
     </>

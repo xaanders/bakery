@@ -49,5 +49,5 @@ h3 {
 }
 
 .message span::after {
-    content: url('../../assets/icons/validation/success-message.svg')
+    content: url('../../../public/assets/icons/validation/success-message.svg')
 }

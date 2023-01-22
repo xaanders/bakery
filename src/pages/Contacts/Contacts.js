@@ -4,7 +4,6 @@ import Button from '../../common/components/UI/Button'
 import Wave from 'react-wavify';
 
 import { gInT, hours } from '../../common/components/Contact-data';
-import map from '../../assets/images/map.jpg';
 
 import classes from './Contacts.module.css';
 
@@ -18,7 +17,7 @@ function Contacts() {
         <div className={classes.box}>
           <div className={classes.info}>
             <div className={classes['contact-item']}>
-              <h3>Contact Us</h3>
+              <h3 className={classes['contact-title']}>Contact Us</h3>
               <div className={classes['contact-info']}>
                 {gInT.map(item => {
                   return <div className={classes.details} key={item.id}>
@@ -32,7 +31,7 @@ function Contacts() {
 
             <div className={classes['contact-item']}>
 
-              <h3>Hours</h3>
+              <h3 className={classes['contact-title']}>Hours</h3>
               <div className={classes['hours-info']}>
                 {hours.map(item => {
                   return <div className={classes.hours} key={item.id}>
@@ -45,7 +44,7 @@ function Contacts() {
           </div>
 
           <div className={classes.map}>
-            <img src={map} alt="map" />
+            <img src={'/assets/images/map.jpg'} alt="map" />
           </div>
         </div>
       </div>
@@ -57,12 +56,13 @@ function Contacts() {
           paused={false}
           options={{
             height: +`${+windowSize > 768 ? 50 : 50}`,
-            amplitude: +`${+windowSize > 768 ? 76 : 56}`,
+            amplitude: +`${+windowSize > 768 ? 76 : 46}`,
             speed: 0.15,
             points: +`${+windowSize > 768 ? 4 : 3}`
           }} />
 
         <div className={classes.img}>
+          <img src={'/assets/images/background/contact-us-bg.jpg'} alt="contacts-bg"/>
         </div>
       </div>
 
