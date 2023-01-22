@@ -49,8 +49,8 @@ function FooterContacts() {
             <div className={`${classes['footer-item']} ${classes['follow-item']}`}>
                 <h3>Follow us</h3>
                 <div className={classes.social}>
-                    <img src={'/assets/icons/social/footer-social/fb.svg'} alt="instagram" />
-                    <img src={"/assets/icons/social/footer-social/inst.svg"} alt="fasebook" />
+                    <a href="https://instagram.com/xaanders1" target="_blank" rel="noreferrer noopener"><img src={'/assets/icons/social/footer-social/inst.svg'}  alt="instagram" /></a>
+                    <a href="https://facebook.com/" target="_blank" rel="noreferrer noopener"><img src={"/assets/icons/social/footer-social/fb.svg"} alt="facebook"/></a>
                 </div>
             </div>
 

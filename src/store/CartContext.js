@@ -3,13 +3,12 @@ import { useNavigate } from 'react-router-dom';
 
 const CartContext = createContext({
     closeModal: () => { },
+ 
 });
-
 
 export function CartContextProvider(props) {
 
     const navigate = useNavigate();
-
     const closeModal = (e) => {
         if (e.target.getAttribute('data-close')) {
             navigate(-1);
@@ -18,7 +17,7 @@ export function CartContextProvider(props) {
     }
 
     const ctxValue = {
-        closeModal: closeModal,
+        closeModal: closeModal,       
     }
 
     return (

@@ -189,13 +189,12 @@ a {
     }
 }
 
-
+*/
 
 
 @media screen and (max-width:  480px) {
   [class*="__container"] {
-    max-width: 465px;
-    padding: 0 1rem 2rem;
+    padding: 0 1rem;
   } 
 
-} */
+} 

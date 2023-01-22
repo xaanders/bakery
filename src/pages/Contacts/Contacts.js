@@ -3,9 +3,9 @@ import { Outlet } from 'react-router-dom';
 import Button from '../../common/components/UI/Button'
 import Wave from 'react-wavify';
 
-import { gInT, hours } from '../../common/components/Contact-data';
 
 import classes from './Contacts.module.css';
+import ContactInfo from './components/ContactInfo';
 
 function Contacts() {
 
@@ -15,34 +15,7 @@ function Contacts() {
     <section id="contacts">
       <div className='contacts__container'>
         <div className={classes.box}>
-          <div className={classes.info}>
-            <div className={classes['contact-item']}>
-              <h3 className={classes['contact-title']}>Contact Us</h3>
-              <div className={classes['contact-info']}>
-                {gInT.map(item => {
-                  return <div className={classes.details} key={item.id}>
-                    <img src={item.contactIcon} alt="icon" />
-                    <span className={classes.body}>{item.body}</span>
-                  </div>
-                })}
-              </div>
-
-            </div>
-
-            <div className={classes['contact-item']}>
-
-              <h3 className={classes['contact-title']}>Hours</h3>
-              <div className={classes['hours-info']}>
-                {hours.map(item => {
-                  return <div className={classes.hours} key={item.id}>
-                    <span className={classes.day}>{item.fullDay}</span>
-                    <span className={classes.time}>{item.time}</span>
-                  </div>
-                })}
-              </div>
-            </div>
-          </div>
-
+          <ContactInfo/>
           <div className={classes.map}>
             <img src={'/assets/images/map.jpg'} alt="map" />
           </div>

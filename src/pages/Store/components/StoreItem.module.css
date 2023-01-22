@@ -10,13 +10,16 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 1rem
 }
 
 @media screen and (max-width: 600px) {
     .item {
         flex-direction: column-reverse;
         padding: 14px 26px;
+        height: 300px;
+
     }
 }
 
@@ -65,33 +68,22 @@
 
 .img {
     overflow: hidden;
-    max-width: 191px;
+    width: 151px;
+    align-self: center;
 }
 .img img {
     display: block;
-    max-width: 100%;
+    width: 100%;
 }
 
-@media screen and (max-width: 600px) {
-    .img {
-        width: 246px;
-        margin: 0 auto;
 
-        height: 186px;
-        align-self: cetnter
-    }
-
-
-
-
-}
 
 @media screen and (max-width: 600px) {
 
     .img {
         width: 246px;
 
-        height: 186px;
+        height: unset;
         align-self: center
     }
 

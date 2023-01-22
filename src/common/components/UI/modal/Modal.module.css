@@ -20,7 +20,9 @@
   z-index: 30;
   animation: slide-down 300ms ease-out forwards;
   max-height: 90vh;
+  min-height: 400px;
   max-width: 90%;
+  min-width: 55%;
     /* margin: 0 auto; */
   overflow: hidden;
   padding-top: 0.8rem

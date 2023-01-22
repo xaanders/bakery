@@ -5,6 +5,14 @@
     
 }
 
+.logo {
+    max-width: 130px;
+}
+
+.logo .logo-img {
+    max-width: 100%;
+}
+
 .footer h3 {
     color: #FFFFFF;
 

@@ -1,61 +1,85 @@
 const redux = require('redux');
 const store = redux.legacy_createStore(cartRedux);
 
-function cartRedux(state = { allItems: [], cart: {items: [], totalPrice: 0 }}, action) {
+function cartRedux(state = { allItems: [], cart: { items: [], totalPrice: 0 } }, action) {
+
     if (action.type === 'ALL') {
-        const newItems = [...action.items];
-        return {...state, allItems: newItems};
+        const updatedItems = { ...state, allItems: [...action.items] }
+
+        return updatedItems;
 
     }
-    // if (action.type === 'ADD') {
-    //     const currentItemIndex = state.cart.findIndex(elem => elem.name === action.item.name);
+    if (action.type === 'ADD') {
+        const currentItemIndex = state.cart.items.findIndex(elem => elem.name === action.item.name);
 
-    //     let currentItem = state.cart[currentItemIndex];
+        let currentItem = state.cart.items[currentItemIndex];
 
-    //     let updatedItems;
+        let updatedItems;
 
-    //     if (currentItem) {
-    //         updatedItems = {
-    //             ...state
-    //         };
+        if (currentItem) {
+            updatedItems = {
+                ...state,
+                cart: { ...state.cart }
 
-    //         updatedItems.cart[currentItemIndex].amount += 1;
-    //     } else {
-    //         updatedItems = {
-    //             ...state,
-    //             cart: [...state.cart, { ...action.item, amount: 1 }]
-    //         };
-    //     }
-    //     return updatedItems;
-    // }
+            };
+            updatedItems.cart.items[currentItemIndex].amount += 1;
+        } else {
+            updatedItems = {
+                ...state,
+                cart: { ...state.cart, items: [...state.cart.items, { ...action.item, amount: 1 }] }
+            };
 
-    // if (action.type === 'REMOVE') {
-    //     const currentItemIndex = state.cart.findIndex(elem => elem.id === action.item.id);
-    //     let currentItem = state.cart[currentItemIndex];
+        }
 
-    //     let updatedItems;
+        updatedItems.cart.totalPrice = updatedItems.cart.items.reduce((a, b) => a + b.price * b.amount, 0);
 
-    //     if (currentItem.amount > 1) {
-    //         updatedItems = {
-    //             ...state
-    //         };
-    //         updatedItems.cart[currentItemIndex] = {
-    //             ...currentItem,
-    //             amount: updatedItems.cart[currentItemIndex].amount - 1
-    //         };
-    //     } else {
-    //         updatedItems = {
-    //             ...state,
-    //             cart: state.cart.filter(product => product.name !== currentItem.name)
-    //         };
-    //     }
-    //     return updatedItems;
-    // }
+        return updatedItems;
+    }
 
-    // if (action.type === "TOTAL") {
-    //     return { ...state, totalPrice: action.total };
-    // }
-    
+    if (action.type === 'MINUS') {
+        const currentItemIndex = state.cart.items.findIndex(elem => elem.id === action.id);
+        let currentItem = state.cart.items[currentItemIndex];
+
+        let updatedItems;
+
+        if (currentItem.amount > 1) {
+            updatedItems = {
+                ...state,
+                cart: { ...state.cart }
+            };
+            updatedItems.cart.items[currentItemIndex] = {
+                ...currentItem,
+                amount: updatedItems.cart.items[currentItemIndex].amount - 1
+            };
+        } else {
+            updatedItems = {
+                ...state,
+                cart: {
+                    ...state.cart,
+                    items: state.cart.items.filter(product => product.name !== currentItem.name)
+                }
+            }
+        }
+        updatedItems.cart.totalPrice = updatedItems.cart.items.reduce((a, b) => a + b.price * b.amount, 0);
+
+        return updatedItems;
+    }
+    if (action.type === 'REMOVE') {
+        const currentItemIndex = state.cart.items.findIndex(elem => elem.id === action.id);
+        let currentItem = state.cart.items[currentItemIndex];
+
+        let updatedItems = {
+            ...state,
+            cart: {
+                ...state.cart,
+                items: state.cart.items.filter(product => product.name !== currentItem.name)
+            }
+        };
+        updatedItems.cart.totalPrice = updatedItems.cart.items.reduce((a, b) => a + b.price * b.amount, 0);
+        return updatedItems;
+    }
+
+
     // if(action.type === "CLEAN") {
     //     return  { cart: [], orders: [], totalPrice: 0 };
     // }

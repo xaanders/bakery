@@ -4,9 +4,18 @@
     gap: 1.625rem;
     justify-content: center;
     align-items: center;
-    
-
 }
+
+.logo {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.logo .logo-img{
+    max-width: 96px;
+}
+
 @media screen and (max-width: 480px) {
     .nav-menu {
         flex-direction: row;
@@ -37,8 +46,11 @@
 
     .logo {
         order: 2;
-        text-align: center;
     }
+    .logo .logo-img{
+        margin: 0 auto;
+    }
+    
     
 }
 .breaker {

@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useCallback, useEffect, useState } from 'react'
+import { NavLink, useLocation } from 'react-router-dom'
 import classes from './NavList.module.css';
 const menuItems = [
     { title: 'Home', url: '/home', id: 'm1' },
@@ -10,24 +10,29 @@ const menuItems = [
 
 function NavList() {
     const [burgerActive, setBurgerActive] = useState(false);
+    const location = useLocation().pathname;
+    
     if (burgerActive) {
         document.body.style.overflow = "hidden"
     } else {
         document.body.style.overflow = "auto"
 
     }
-    function btnHandler() {
-        setBurgerActive(!burgerActive);
+    const btnHandler = useCallback(function handler() {
+        setBurgerActive(b => !b);
+    }, [setBurgerActive])
 
-    }
-
+    useEffect(() => {
+        btnHandler();
+    }, [location, btnHandler])
+    
 
     return (
         <nav className={classes.nav}>
             <button className={`${classes['burger-btn']} ${burgerActive ? classes.active : ''}`} onClick={btnHandler} >
                 <span></span>
             </button>
-
+        <div className={classes.scroll}>
             <ul className={`${classes['list-items']} ${burgerActive ? classes.active : ''}`}>
                 {menuItems.map(menuItem => {
                     return (
@@ -41,6 +46,7 @@ function NavList() {
                     )
                 })}
             </ul>
+        </div>
         </nav>
 
     )

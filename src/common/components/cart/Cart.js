@@ -1,14 +1,20 @@
 import React, { useContext } from 'react'
+import { useSelector } from 'react-redux'
 import CartContext from '../../../store/CartContext'
 import Modal from '../UI/modal/Modal'
 import classes from './Cart.module.css'
 import CartItems from './CartItems'
 
 function Cart() {
+    const totalPrice = useSelector(state => state.cart.totalPrice);
+
+
     const ctx = useContext(CartContext);
     function closeHandler() {
         ctx.closeModal();
     }
+
+
     return (
         <Modal>
             <form className={classes.form}>
@@ -21,10 +27,11 @@ function Cart() {
                 </div>
 
                 <CartItems/>
+
                 <div className={classes.breaker}></div>
                 <div className={classes.total}>
                     <span className={classes.Subtotal}>Subtotal</span>
-                    <span className={classes.totalPrice}>{85}$</span>
+                    <span className={classes.totalPrice}>{totalPrice.toFixed(2) || 0}$</span>
                 </div>
                 <div className={classes.actions}>
                     <button type="button" className={classes['btn-cancel']} data-close onClick={closeHandler}>Continue shopping</button>

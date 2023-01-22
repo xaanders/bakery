@@ -18,5 +18,17 @@ export default async function getAllItems(reduxDispatch) {
       items.push(productObj);
     }
     reduxDispatch({type: "ALL", items: items})
-    return items;
   }
+
+
+  
+export function addCartHandler(dispatch, item) {
+  const newItem = {
+      name: item.name,
+      price: item.price,
+      img: item.img,
+      id: item.id
+  }
+
+  dispatch({ type: "ADD", item: newItem })
+}
