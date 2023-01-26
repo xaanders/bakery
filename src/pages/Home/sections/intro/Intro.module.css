@@ -13,23 +13,6 @@
   z-index: 12;
 }
 
-
-.gradient {
-  /* content: ""; */
-  position: absolute;
-  top: -10%;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  z-index: 0;
-  overflow: visible;
-
-  background: radial-gradient(36.78% 29.54% at 45.15% 33.35%, #EFE4C9 10%, rgba(255, 255, 255, 0) 100%);
-}
-
-
-
 @media screen and (max-width: 1324px) {
   .intro-info {
     top: 20%;
@@ -42,7 +25,6 @@
   margin-bottom: 6.9rem;
   max-width: 640px;
   color: #463A3A;
-  /* background: radial-gradient(37.78% 100.54% at 50.15% 27.35%, #EFE4C9 100%, rgba(255, 255, 255, 0) 100%); */
   position: relative;
   z-index: 10;
 }

@@ -1,14 +1,13 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-
 import classes from './FooterContacts.module.css'
-import { menuItems, instSvg, fbSvg, gInT, hours } from '../../Contact-data';
+import { menuItems, gInT, hours } from '../../Contact-data';
 
 function FooterContacts() {
     return (
         <div className={classes.contacts}>
             <div className={`${classes['footer-item']} ${classes['menu-item']}`}>
-                <h3>Menu</h3>
+                <h3 className={classes['item-title']}>Menu</h3>
                 <ul className={classes['menu-info']}>
                     {menuItems.map(item => {
                         return <li key={item.id}>
@@ -23,7 +22,7 @@ function FooterContacts() {
             </div>
 
             <div className={`${classes['footer-item']} ${classes['hours-item']}`}>
-                <h3>Hours</h3>
+                <h3 className={classes['item-title']}>Hours</h3>
                 <div className={classes['hours-info']}>
                     {hours.map(item => {
                         return <div className={classes.hours} key={item.id}>
@@ -34,7 +33,7 @@ function FooterContacts() {
                 </div>
             </div>
             <div className={`${classes['footer-item']} ${classes['get-item']}`}>
-                <h3>Get In Touch</h3>
+                <h3 className={classes['item-title']}>Get In Touch</h3>
                 <div className={classes['contact-info']}>
                     {gInT.map(item => {
                         return <div className={classes.details} key={item.id}>
@@ -47,10 +46,12 @@ function FooterContacts() {
             </div>
 
             <div className={`${classes['footer-item']} ${classes['follow-item']}`}>
-                <h3>Follow us</h3>
+                <h3 className={classes['item-title']}>Follow us</h3>
                 <div className={classes.social}>
-                    <a href="https://instagram.com/xaanders1" target="_blank" rel="noreferrer noopener"><img src={'/assets/icons/social/footer-social/inst.svg'}  alt="instagram" /></a>
-                    <a href="https://facebook.com/" target="_blank" rel="noreferrer noopener"><img src={"/assets/icons/social/footer-social/fb.svg"} alt="facebook"/></a>
+                    <a href="https://instagram.com/xaanders1" className={`${classes.icon} _icon-inst`} target="_blank" rel="noreferrer noopener">
+                    </a>
+                    <a href="https://facebook.com/" className={`${classes.icon} _icon-fb`} target="_blank" rel="noreferrer noopener">
+                    </a>
                 </div>
             </div>
 

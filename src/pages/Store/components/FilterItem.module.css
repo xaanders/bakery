@@ -45,7 +45,6 @@
 
     .box {
         min-width: 149px;
-        /* min-height: 40px; */
     }
 
 }
@@ -55,6 +54,5 @@
    
     .box {
         min-width: 100px;
-        /* min-height: 40px; */
     }
 }

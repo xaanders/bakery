@@ -4,7 +4,7 @@ import NavList from './NavList'
 import { Link } from 'react-router-dom';
 
 
-function NavMenu() {
+function NavMenu({windowSize}) {
     return (
         <div className={classes['nav-menu']}>
             <div className={classes.logo}>
@@ -12,7 +12,7 @@ function NavMenu() {
             </div>
             <div className={classes.breaker}></div>
             
-           <NavList/>
+           <NavList windowSize={windowSize}/>
         </div>
 
     )

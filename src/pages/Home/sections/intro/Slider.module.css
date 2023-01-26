@@ -41,6 +41,14 @@
 
 }
 
+@media screen and (max-width: 480px) {
+  .wave1 {
+
+    top: -12%;
+
+  }
+
+}
 .wave2 {
   position: absolute;
   bottom: -1%;
@@ -56,6 +64,14 @@
   .wave2 {
 
     bottom: -4%;
+
+  }
+
+}
+@media screen and (max-width: 480px) {
+  .wave2 {
+
+    bottom: -12%;
 
   }
 

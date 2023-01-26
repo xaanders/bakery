@@ -34,7 +34,7 @@
     
     .menu {
         grid-template-rows: 1fr;
-        grid-template-columns: 3fr 1fr;
+        grid-template-columns: 1fr 2fr;
         grid-template-areas: unset
     }
 }

@@ -3,23 +3,27 @@ import { useSelector } from 'react-redux';
 import { Outlet, useParams } from 'react-router-dom'
 import StoreItem from './StoreItem';
 import classes from './StoreItems.module.css';
-import LoadingSpinner from '../../../common/components/LoadingSpinner';
 
-function StoreItems({setMessage, error, loading}) {
+function StoreItems({ setMessage }) {
     const cards = useSelector(state => state.allItems);
     const params = useParams();
     let filtredItems = [...cards];
 
-    if(params.filterName !== 'all') {
+    if (params.filterName !== 'all') {
         filtredItems = cards.filter(item => item.type === params.filterName);
-    }   
+    }
 
     return (
         <div className={classes['items-container']}>
             <h3 className={classes.title}>Products:</h3>
-            {loading && <LoadingSpinner/>}
             <div className={classes.items}>
-                {filtredItems.map(item => <StoreItem onMessage={setMessage} key={item.id} item={item} />)}
+                {filtredItems.map(item =>
+                    <StoreItem
+                        onMessage={setMessage}
+                        key={item.id}
+                        item={item}
+                        detailsLink={`/store/${params.filterName}/${item.name.toLowerCase()}`} />
+                )}
             </div>
             <Outlet />
         </div>

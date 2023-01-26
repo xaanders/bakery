@@ -3,17 +3,15 @@ import Button from '../../../../common/components/UI/Button';
 import classes from './Intro.module.css';
 import Slider from './Slider';
 
-function Intro() {
+function Intro({wSize}) {
     return (
         <section id='#intro'>
             <div className={classes['intro-box']}>
-                <Slider />
+                <Slider windowSize={wSize}/>
                 <div className={classes['intro-info']}>
-                    {/* <div className={classes.gradient}><span></span></div> */}
-
                     <h1 className={classes.title}>The best bakery in Toronto</h1>
-                    <Button content={'Order now'} link="/store"/>
-                   
+                    <Button link="/store" size="btn-big">ORDER NOW</Button>
+                    
                 </div>
             </div>
         </section>
@@ -21,4 +19,4 @@ function Intro() {
     )
 }
 
-export default Intro
+export default React.memo(Intro);

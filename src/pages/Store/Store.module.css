@@ -20,17 +20,7 @@
 }
 
 
-h3 {
-    font-size: 40px;
-    line-height: 39px;
-    color: #463A3A;
-}
 
-@media screen and (max-width: 480px) {
-    h3 {
-        display: none;
-    }
-}
 
 .message {
     height: 36px;

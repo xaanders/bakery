@@ -7,10 +7,10 @@ import { useSelector } from 'react-redux';
 function NavActions() {
     const location = useLocation();
     const countItems = useSelector(state => state.cart.items);
-    
+
     return (
         <div className={classes['nav-actions']}>
-            <form className={classes['form-search']}>
+            <form className={classes['form-search']} >
                 <input className={classes.input} name="search" type='text' />
 
                 <div className={classes.search}>

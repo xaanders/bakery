@@ -24,9 +24,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+._icon-fb:before {
+  content: "\e904";
+}
+._icon-inst:before {
+  content: "\e905";
+}
 ._icon-price:before {
   content: "\e900";
-  color: #597266;
 }
 ._icon-exp:before {
   content: "\e901";

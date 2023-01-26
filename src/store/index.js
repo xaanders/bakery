@@ -1,7 +1,7 @@
 const redux = require('redux');
 const store = redux.legacy_createStore(cartRedux);
 
-function cartRedux(state = { allItems: [], cart: { items: [], totalPrice: 0 } }, action) {
+function cartRedux(state = { allItems: [], cart: { items: [], totalPrice: 0 }}, action) {
 
     if (action.type === 'ALL') {
         const updatedItems = { ...state, allItems: [...action.items] }
@@ -79,10 +79,8 @@ function cartRedux(state = { allItems: [], cart: { items: [], totalPrice: 0 } },
         return updatedItems;
     }
 
-
-    // if(action.type === "CLEAN") {
-    //     return  { cart: [], orders: [], totalPrice: 0 };
-    // }
+  
+  
 
     return state;
 }

@@ -1,15 +1,24 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import ReactDOM from "react-dom";
-import CartContext from '../../../../store/CartContext';
+import { useNavigate } from 'react-router-dom';
 import classes from './Modal.module.css'
 
 const Modal = props => {
-    document.body.style.overflow = "hidden"
-    const ctx = useContext(CartContext);
+    const navigate = useNavigate();
+    document.body.classList.add('of-hidden');
     
+    const closeModal = (e) => {
+        if (e.target.getAttribute('data-close')) {
+            navigate(-1);
+            document.body.classList.remove('of-hidden');
+        }
+    }
+    
+    const classType = classes[props.classType];
+
     const content =
-        <div className={classes.backdrop} onClick={ctx.closeModal} data-close>
-            <div className={classes.modal}>
+        <div className={classes.backdrop} onClick={closeModal} data-close>
+            <div className={`${classes.modal} ${classType}`}>
                 <div className={classes.scroll}>
                     <span className={classes.cross} data-close>&times;</span>
                     {props.children}

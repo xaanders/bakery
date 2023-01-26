@@ -38,17 +38,12 @@
 @media screen and (max-width: 480px) {
     .nav-menu {
         grid-area: unset;
-        display: grid;
-        grid-template-columns: 1fr 2fr;
         justify-content: flex-start;
 
     }
 
     .logo {
-        order: 2;
-    }
-    .logo .logo-img{
-        margin: 0 auto;
+        display: none;
     }
     
     
@@ -74,6 +69,3 @@
     }
 }
 
-/* .nav {} */
-
-/* .burger-btn {} */

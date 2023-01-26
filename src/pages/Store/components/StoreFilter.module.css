@@ -33,3 +33,8 @@
 }
 
 
+@media screen and (max-width: 480px) {
+    .title {
+        display: none;
+    }
+}

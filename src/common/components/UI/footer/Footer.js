@@ -1,25 +1,24 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import Container from '../Container'
 import Contacts from './FooterContacts'
 import classes from './Footer.module.css'
-import { logoLight } from '../../Contact-data';
-import Wave from 'react-wavify';
 import { Link } from 'react-router-dom';
+import Waves from '../Waves';
 
-function Footer() {
-  const [windowSize] = useRef([window.innerWidth]).current;
+function Footer({ wSize }) {
+  const waveOptions = {
+    height: wSize > 480 ? 50 : 30,
+    amplitude: wSize > 768 ? 76 : 36,
+    speed: 0.15,
+    points: wSize > 768 ? 4 : 3
+  }
+
 
   return (
     <footer className={classes.footer}>
 
-      <Wave className={classes.wave1} fill='#597266'
-        paused={false}
-        options={{
-          height: +`${+windowSize > 480 ? 50 : 30}`,
-          amplitude: +`${+windowSize > 768 ? 76 : 56}`,
-          speed: 0.15,
-          points: +`${+windowSize > 768 ? 4 : 3}`
-        }} />
+
+      <Waves classesList={classes.wave1} opitons={waveOptions} color='#597266' />
       <div className={classes.box}>
         <Container classes="footer__container">
 

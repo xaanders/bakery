@@ -118,6 +118,11 @@ h1, h2, h3 {
   font-weight: 300;
 }
 
+h3 {
+  font-size: 40px;
+  line-height: 39px;
+  color: #463A3A;
+}
 
 
 body {
@@ -138,6 +143,9 @@ a {
   justify-content: space-between;
   min-height: 100vh;
 
+}
+.of-hidden {
+  overflow: hidden;
 }
 #contacts {
   position: relative;
@@ -169,32 +177,11 @@ a {
 
   } 
 }
-/* 
-@media screen and (max-width: 1324px) {
-  [class*="__container"] {
-    padding: 0 6rem 100px;
-  } 
-
-}
-
-@media screen and (max-width: 1124px) {
-  [class*="__container"] {
-    padding: 0 4rem 100px;
-  } 
-
-}
-@media screen and (max-width: 1024px) {
-    .nav-actions {
-        gap: 3rem
-    }
-}
-
-*/
 
 
 @media screen and (max-width:  480px) {
   [class*="__container"] {
-    padding: 0 1rem;
+    padding: 0 1rem ;
   } 
 
 } 

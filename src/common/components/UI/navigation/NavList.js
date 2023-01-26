@@ -1,52 +1,47 @@
 import React, { useCallback, useEffect, useState } from 'react'
-import { NavLink, useLocation } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
+import MenuItems from './MenuItems';
 import classes from './NavList.module.css';
-const menuItems = [
-    { title: 'Home', url: '/home', id: 'm1' },
-    { title: 'About', url: '/about', id: 'm2' },
-    { title: 'Store', url: '/store', id: 'm3' },
-    { title: 'Contacts', url: '/contacts', id: 'm4' }
-];
 
-function NavList() {
+
+function NavList({ windowSize }) {
     const [burgerActive, setBurgerActive] = useState(false);
-    const location = useLocation().pathname;
-    
-    if (burgerActive) {
-        document.body.style.overflow = "hidden"
-    } else {
-        document.body.style.overflow = "auto"
 
-    }
+    const location = useLocation().pathname;
     const btnHandler = useCallback(function handler() {
-        setBurgerActive(b => !b);
-    }, [setBurgerActive])
+        if (windowSize < 480) {
+            setBurgerActive(b => {
+                if (b) {
+                    document.body.classList.remove('of-hidden')
+                } else if (!b) {
+                    document.body.classList.add('of-hidden');
+                }
+                return !b;
+            });
+        }
+
+    }, [setBurgerActive, windowSize])
 
     useEffect(() => {
-        btnHandler();
-    }, [location, btnHandler])
-    
+        setBurgerActive(b => b ? false : b);
+    }, [location]);
 
+    useEffect(() => {
+        if (windowSize > 480 && burgerActive) {
+            document.body.classList.remove('of-hidden')
+        }
+    }, [windowSize, burgerActive])
+
+    const activeClass = burgerActive ? classes.active : '';
     return (
         <nav className={classes.nav}>
-            <button className={`${classes['burger-btn']} ${burgerActive ? classes.active : ''}`} onClick={btnHandler} >
+            <button className={`${classes['burger-btn']} ${activeClass}`} name="burger-btn" onClick={btnHandler} >
                 <span></span>
             </button>
-        <div className={classes.scroll}>
-            <ul className={`${classes['list-items']} ${burgerActive ? classes.active : ''}`}>
-                {menuItems.map(menuItem => {
-                    return (
-                        <li key={menuItem.id}>
-                            <NavLink className={navData => {
-                                return navData.isActive
-                                    ? `${classes['link-item']} ${classes.active}`
-                                    : classes['link-item'];
-                            }} to={menuItem.url}>{menuItem.title}</NavLink>
-                        </li>
-                    )
-                })}
-            </ul>
-        </div>
+            <div className={`${classes.scroll} ${activeClass}`} onClick={btnHandler}>
+               <MenuItems burgerActive={burgerActive}/>
+
+            </div>
         </nav>
 
     )

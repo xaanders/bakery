@@ -37,11 +37,11 @@ function CartItems() {
                         </div>
 
                         <div className={classes.quantity}>
-                            <button type="button" onClick={()=> removeCartHandler(item)}>-</button>
+                            <button type="button" name="remove-btn" onClick={()=> removeCartHandler(item)}>-</button>
                             <span>{item.amount}</span>
-                            <button type="button" onClick={() => onAddHandler(item)}>+</button>
+                            <button type="button" name="add-btn" onClick={() => onAddHandler(item)}>+</button>
                         </div>
-                        <button type="button" className={classes.cross} onClick={() => removeItem(item)}>&times;</button>
+                        <button type="button" name="cross-btn" className={classes.cross} onClick={() => removeItem(item)}>&times;</button>
 
 
                     </div>

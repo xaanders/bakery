@@ -1,20 +1,22 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux';
+
 import Container from '../../common/components/UI/Container'
 import StoreFilter from './components/StoreFilter';
 import StoreItems from './components/StoreItems';
+import LoadingSpinner from '../../common/components/LoadingSpinner';
+
 import classes from './Store.module.css'
 import useHttp from '../../hooks/use-http';
 import getAllItems from '../../api/api';
 
 
-function Store() {
+function Store({isMessage, onMessage}) {
   const dispatch = useDispatch();
-  const { sendRequest, loading, error } = useHttp(getAllItems);
-  const [isMessage, setIsMessage] = useState(false);
+  const { sendRequest, loading } = useHttp(getAllItems);
+
   useEffect(() => {
     sendRequest(dispatch);
-    
   }, [dispatch, sendRequest]);
 
   return (
@@ -26,8 +28,8 @@ function Store() {
 
         <div className={classes.store}>
           <StoreFilter />
-          <StoreItems setMessage={setIsMessage} loading={loading} error={error} />
-    
+          {loading ? <LoadingSpinner /> :
+            <StoreItems setMessage={onMessage} />}
         </div>
       </Container>
 

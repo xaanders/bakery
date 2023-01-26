@@ -1,6 +1,5 @@
 .contacts {
     display: flex;
-    /* gap: 6rem; */
     justify-content: space-between;
     padding-top: 83px;
 }
@@ -12,6 +11,7 @@
     }
 
 }
+
 @media screen and (max-width: 480px) {
     .contacts {
 
@@ -27,13 +27,13 @@
 
 }
 
-.footer-item h3 {
+.footer-item .item-title {
     font-size: 2.5rem;
     line-height: 1.2;
 }
 
 @media screen and (max-width: 769px) {
-    .footer-item h3 {
+    .footer-item .item-title {
         display: none;
         font-size: 2rem;
     }
@@ -47,12 +47,12 @@
     gap: 15px
 }
 
-@media screen and (max-width:  480px) {
+@media screen and (max-width: 480px) {
     .menu-info {
         display: none;
     }
-    
-} 
+
+}
 
 
 .hours-info {
@@ -108,20 +108,29 @@
 @media screen and (max-width: 769px) {
     .details {
         gap: 2.25rem
-
     }
-    
+
     .social {
         flex-direction: column;
-
+        align-items: space-around;
     }
-    
+
 
 }
+
 @media screen and (max-width: 480px) {
     .details {
         gap: 1.2rem
-        
     }
 
+}
+
+.icon {
+    font-size: 24px;
+    color: #b8b8b8;
+
+}
+
+.icon:hover {
+    color: #fff;
 }

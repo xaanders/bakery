@@ -3,10 +3,11 @@ import Intro from './sections/intro/Intro'
 import HomeCards from './sections/cards/HomeCards'
 import { Outlet } from 'react-router-dom'
 
-function Home() {
+function Home({windowSize}) {
+  console.log('home');
   return (
     <React.Fragment>
-      <Intro/>
+      <Intro wSize={windowSize}/>
       <HomeCards/>
       <Outlet/>
     </React.Fragment>

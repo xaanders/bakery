@@ -55,8 +55,6 @@
 @media (min-width: 900px) {
     .items {
         grid-template-columns: repeat(3, 1fr);
-        max-height: unset;
-        overflow-y: auto;
     }
     
 }
@@ -64,5 +62,11 @@
 @media screen and (max-width: 1024px) {
     .items {
         gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        display: none;
     }
 }

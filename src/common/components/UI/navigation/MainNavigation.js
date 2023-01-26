@@ -6,14 +6,15 @@ import NavMenu from './NavMenu';
 import NavActions from './NavActions';
 import Social from './Social';
   
-function MainNavigation() {
+function MainNavigation({wSize}) {
+  console.log('MainNavigation')
   return (
     <header className={classes.header}>
       <Container classes='header__container'>
         <div className={classes.menu}>
           
           <Social/>
-          <NavMenu />
+          <NavMenu windowSize={wSize}/>
           <NavActions />
 
         </div>
@@ -21,6 +22,6 @@ function MainNavigation() {
 
     </header>
   )
-}
+  }
 
 export default MainNavigation

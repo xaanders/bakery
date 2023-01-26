@@ -32,3 +32,4 @@ export function addCartHandler(dispatch, item) {
 
   dispatch({ type: "ADD", item: newItem })
 }
+

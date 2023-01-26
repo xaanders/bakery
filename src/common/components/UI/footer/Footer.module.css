@@ -2,7 +2,7 @@
     background-color: transparent;
     position: relative;
     margin-top: 2rem;
-    
+
 }
 
 .logo {
@@ -25,10 +25,24 @@ span {
 
 .box {
     width: 100%;
-    padding: 0 0 80px;
+    padding: 0 0 5rem;
     background-color: #597266;
     /* z-index: 9; */
 
+}
+
+@media screen and (max-width: 769px) {
+    .box {
+        padding: 0 0 3.5rem;
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .box {
+        padding: 0 0 1rem;
+
+    }
 }
 
 .content {
@@ -49,12 +63,7 @@ span {
     }
 }
 
-@media screen and (max-width: 769px) {
-    .content {
-        grid-template-columns: 1fr 2.5fr;
 
-    }
-}
 @media screen and (max-width: 769px) {
     .content {
         grid-template-columns: 1fr 3fr;
@@ -65,11 +74,13 @@ span {
 .content .logo {
     align-self: flex-start;
 }
+
 @media screen and (max-width: 769px) {
     .content .logo img {
         width: 85px
     }
 }
+
 @media screen and (max-width: 480px) {
     .content .logo img {
         width: 74px
@@ -81,6 +92,14 @@ span {
     position: relative;
     z-index: 10;
     height: 160px;
-    pointer-events: none; 
+    pointer-events: none;
     transform: translate(0, 3%);
 }
+
+@media screen and (max-width: 768px) {
+
+    .wave1 {
+        height: 100px;
+    }
+}
+

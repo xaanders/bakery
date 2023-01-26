@@ -3,7 +3,6 @@
     flex-direction: column;
     gap: 1.7rem;
     overflow: auto;
-    /* max-height: 700px; */
 }
 
 .items::-webkit-scrollbar {
@@ -49,7 +48,6 @@
 
 
 .img-box img {
-    /* transform: translate(-16px, 0); */
     max-width: 100%;
 
 }

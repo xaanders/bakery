@@ -5,9 +5,9 @@ import MainNavigation from './navigation/MainNavigation';
 function Layout(props) {
     return (
         <>
-            <MainNavigation />
+            <MainNavigation wSize={props.windowSize}/>
             <main>{props.children}</main>
-            <Footer />
+            <Footer wSize={props.windowSize}/>
         </>
     )
 }

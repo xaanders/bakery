@@ -17,7 +17,7 @@ function Cards() {
                     <div className={`${classes.card} ${classes[card.id]}`} key={card.id}>
                         <div className={classes['card-in']}>
                             <div className={classes['img-box']}>
-                                <div className={`_icon-${card.id}`}></div>
+                                <div className={`_icon-${card.id} ${classes['card-icon']}`}></div>
                             </div>
                             <h2 className={classes['card-title']}>{card.title}</h2>
                             <p className={classes['card-body']}>{card.body}</p>

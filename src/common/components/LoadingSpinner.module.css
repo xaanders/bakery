@@ -1,5 +1,6 @@
 .centered {
   text-align: center;
+  width: 100%;
 }
 .spinner {
   display: inline-block;

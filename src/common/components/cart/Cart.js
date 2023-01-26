@@ -1,43 +1,35 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { useSelector } from 'react-redux'
-import CartContext from '../../../store/CartContext'
 import Modal from '../UI/modal/Modal'
 import classes from './Cart.module.css'
 import CartItems from './CartItems'
-
+import Button from '../UI/Button'
 function Cart() {
     const totalPrice = useSelector(state => state.cart.totalPrice);
-
-
-    const ctx = useContext(CartContext);
-    function closeHandler() {
-        ctx.closeModal();
-    }
-
-
     return (
-        <Modal>
-            <form className={classes.form}>
-                <h3 className={classes.title}>Shopping cart</h3>
+        <Modal classType="cart-modal">
 
-                <div className={classes['cart-titles']}>
-                    <div className={classes['product-title']}>Product</div>
-                    <div className={classes['price-title']}>Price</div>
-                    <div className={classes['quantity-title']}>Quantity</div>
-                </div>
+                <form className={classes.form}>
+                    <h3 className={classes.title}>Shopping cart</h3>
 
-                <CartItems/>
+                    <div className={classes['cart-titles']}>
+                        <div className={classes['product-title']}>Product</div>
+                        <div className={classes['price-title']}>Price</div>
+                        <div className={classes['quantity-title']}>Quantity</div>
+                    </div>
 
-                <div className={classes.breaker}></div>
-                <div className={classes.total}>
-                    <span className={classes.Subtotal}>Subtotal</span>
-                    <span className={classes.totalPrice}>{totalPrice.toFixed(2) || 0}$</span>
-                </div>
-                <div className={classes.actions}>
-                    <button type="button" className={classes['btn-cancel']} data-close onClick={closeHandler}>Continue shopping</button>
-                    <button type="submit" className={classes['btn-submit']}>Checkout</button>
-                </div>
-            </form>
+                    <CartItems />
+
+                    <div className={classes.breaker}></div>
+                    <div className={classes.total}>
+                        <span className={classes.Subtotal}>Subtotal</span>
+                        <span className={classes.totalPrice}>{totalPrice.toFixed(2) || 0}$</span>
+                    </div>
+                    <div className={classes.actions}>
+                        <button type="button" name="back-btn" className={classes['btn-cancel']} data-close>Continue shopping</button>
+                        <Button type="submit" size='btn-small' name="submit-btn">Checkout</Button>
+                    </div>
+                </form>
         </Modal>
     )
 }
