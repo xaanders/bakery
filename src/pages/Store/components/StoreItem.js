@@ -20,7 +20,7 @@ function StoreItem({ item, onMessage, detailsLink }) {
             </div>
 
             <div className={classes.info}>
-                <h4 className={classes['item-title']}>{item.name}</h4>
+                <h5 className={classes['item-title']}>{item.name}</h5>
 
                 <div className={classes.activities}>
                     <Link className={classes.details} to={detailsLink}>Details...</Link>

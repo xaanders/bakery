@@ -14,11 +14,10 @@ const Modal = props => {
         }
     }
     
-    const classType = classes[props.classType];
 
     const content =
         <div className={classes.backdrop} onClick={closeModal} data-close>
-            <div className={`${classes.modal} ${classType}`}>
+            <div className={`${classes.modal} ${classes[props.classType]}`}>
                 <div className={classes.scroll}>
                     <span className={classes.cross} data-close>&times;</span>
                     {props.children}

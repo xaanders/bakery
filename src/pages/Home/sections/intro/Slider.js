@@ -13,9 +13,9 @@ function Slider({ windowSize }) {
 
     return (
         <div className={classes.slider}>
-            <Waves options={waveOptions} classesList={classes.wave1} color='#f5f5f5' />
+            <Waves options={waveOptions} classesList={classes.wave1} color='#FFFFFF' />
             <ImgSlider />
-            <Waves options={waveOptions} classesList={classes.wave2} color='#f5f5f5' />
+            <Waves options={waveOptions} classesList={classes.wave2} color='#FFFFFF' />
 
         </div>
     )

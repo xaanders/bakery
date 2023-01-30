@@ -6,7 +6,6 @@ import classes from './Contacts.module.css';
 import ContactInfo from './components/ContactInfo';
 
 function Contacts() {
-  console.log('contacts');
   const [windowSize] = useRef([window.innerWidth]).current;
 
   const waveOptions = {
@@ -30,7 +29,7 @@ function Contacts() {
         <div className={classes.actions}>
           <Button link='/store' size="btn-big">Get Started</Button>
         </div>
-        <Waves classesList={classes.wave1} color='#F5F5F5' options={waveOptions}/>
+        <Waves classesList={classes.wave1} color='#FFFFFF' options={waveOptions}/>
         <div className={classes.img}>
           <img src={'/assets/images/background/contact-us-bg.webp'} alt="contacts-bg"/>
         </div>

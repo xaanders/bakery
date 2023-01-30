@@ -1,0 +1,31 @@
+.content input::-webkit-outer-spin-button,
+.content input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 54px;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    max-width: 550px;
+
+  }
+}
+@media screen and (max-width: 480px) {
+  .content {
+    gap: 63px;
+  }
+}
+

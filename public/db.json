@@ -38,7 +38,7 @@
             "type": "cakes"
         },
         {
-            "name": "Nutella",
+            "name": "Nutella Cake",
             "price": "6.99",
             "img": "/assets/images/products/cakes/7.webp",
             "type": "cakes"
@@ -152,19 +152,19 @@
             "type": "donuts"
         },
         {
-            "name": "Apple",
+            "name": "Apple Pie",
             "price": "2.99",
             "img": "/assets/images/products/pies/2.webp",
             "type": "pies"
         },
         {
-            "name": "Lemon",
+            "name": "Lemon Pie",
             "price": "2.99",
             "img": "/assets/images/products/pies/2.webp",
             "type": "pies"
         },
         {
-            "name": "Blueberry",
+            "name": "Blueberry Pie",
             "price": "4.99",
             "img": "/assets/images/products/pies/3.webp",
             "type": "pies"

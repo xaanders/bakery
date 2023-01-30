@@ -1,0 +1,21 @@
+.order {
+    padding: 0 59px 19px 41px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  
+  }
+  
+  .order-item {
+    display: flex;
+    justify-content: space-between;
+    line-height: 24px;
+  }
+  
+  .order-item:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+  
+  .order-details-item {
+    flex: 0 0 35%;
+    display: flex;
+    justify-content: space-between;
+  }

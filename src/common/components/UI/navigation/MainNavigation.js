@@ -7,7 +7,6 @@ import NavActions from './NavActions';
 import Social from './Social';
   
 function MainNavigation({wSize}) {
-  console.log('MainNavigation')
   return (
     <header className={classes.header}>
       <Container classes='header__container'>

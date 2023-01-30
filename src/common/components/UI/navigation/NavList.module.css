@@ -6,22 +6,23 @@
 
 
     .scroll {
+        position: fixed;
+        left: 0;
         top: 0;
-        left: -150%;
         width: 100vw;
         height: 100vh;
-        position: fixed;
         z-index: 15;
         padding-top: 3rem;
         transition: all 0.3s linear;
         -moz-transition: all 0.3s linear;
         -o-transition: all 0.3s linear;
         -webkit-transition: all 0.3s linear;   
-        
+        transform: translate(-250%, 0);
     }
 
     .scroll.active {
-        left: 0;
+        transform: translate(0, 0);
+
     }
 
 

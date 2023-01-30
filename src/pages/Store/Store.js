@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux';
 
 import Container from '../../common/components/UI/Container'
@@ -9,9 +9,10 @@ import LoadingSpinner from '../../common/components/LoadingSpinner';
 import classes from './Store.module.css'
 import useHttp from '../../hooks/use-http';
 import getAllItems from '../../api/api';
+import { Outlet } from 'react-router-dom';
 
 
-function Store({isMessage, onMessage}) {
+function Store({ isMessage, onMessage }) {
   const dispatch = useDispatch();
   const { sendRequest, loading } = useHttp(getAllItems);
 
@@ -30,6 +31,7 @@ function Store({isMessage, onMessage}) {
           <StoreFilter />
           {loading ? <LoadingSpinner /> :
             <StoreItems setMessage={onMessage} />}
+          <Outlet />
         </div>
       </Container>
 
@@ -38,4 +40,4 @@ function Store({isMessage, onMessage}) {
   )
 }
 
-export default Store
+export default React.memo(Store)

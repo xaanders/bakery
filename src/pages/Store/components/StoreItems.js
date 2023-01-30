@@ -25,7 +25,6 @@ function StoreItems({ setMessage }) {
                         detailsLink={`/store/${params.filterName}/${item.name.toLowerCase()}`} />
                 )}
             </div>
-            <Outlet />
         </div>
     )
 }

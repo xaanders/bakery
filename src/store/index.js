@@ -1,7 +1,7 @@
 const redux = require('redux');
 const store = redux.legacy_createStore(cartRedux);
 
-function cartRedux(state = { allItems: [], cart: { items: [], totalPrice: 0 }}, action) {
+function cartRedux(state = { allItems: [], cart: { items: [], totalPrice: 0 } }, action) {
 
     if (action.type === 'ALL') {
         const updatedItems = { ...state, allItems: [...action.items] }
@@ -32,6 +32,9 @@ function cartRedux(state = { allItems: [], cart: { items: [], totalPrice: 0 }}, 
         }
 
         updatedItems.cart.totalPrice = updatedItems.cart.items.reduce((a, b) => a + b.price * b.amount, 0);
+        localStorage.setItem('checkout', true);
+        const storageCart = JSON.stringify(updatedItems.cart);
+        localStorage.setItem('cart', storageCart);
 
         return updatedItems;
     }
@@ -62,6 +65,11 @@ function cartRedux(state = { allItems: [], cart: { items: [], totalPrice: 0 }}, 
         }
         updatedItems.cart.totalPrice = updatedItems.cart.items.reduce((a, b) => a + b.price * b.amount, 0);
 
+        if (updatedItems.cart.totalPrice === 0) {
+            localStorage.setItem('checkout', false);
+        }
+        const storageCart = JSON.stringify(updatedItems.cart);
+        localStorage.setItem('cart', storageCart);
         return updatedItems;
     }
     if (action.type === 'REMOVE') {
@@ -76,11 +84,35 @@ function cartRedux(state = { allItems: [], cart: { items: [], totalPrice: 0 }}, 
             }
         };
         updatedItems.cart.totalPrice = updatedItems.cart.items.reduce((a, b) => a + b.price * b.amount, 0);
+        if (updatedItems.cart.totalPrice === 0) {
+            localStorage.setItem('checkout', false);
+        }
+        const storageCart = JSON.stringify(updatedItems.cart);
+        localStorage.setItem('cart', storageCart);
+
         return updatedItems;
     }
+    if (action.type === 'STORAGE') {
+        const storageCart = JSON.parse(localStorage.getItem('cart'));
+        if (storageCart) {
+            const updatedItems = {
+                ...state,
+                cart: storageCart
+            }
+            updatedItems.cart.totalPrice > 0 ? localStorage.setItem('checkout', true) : localStorage.setItem('checkout', false);
+            return updatedItems;
+            
+        } else {
+            localStorage.setItem('checkout', false);
+            return state;
 
-  
-  
+        }
+
+
+
+    }
+
+
 
     return state;
 }

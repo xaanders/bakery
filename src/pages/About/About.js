@@ -7,7 +7,6 @@ import AboutItems from './components/AboutItems'
 
 
 function About() {
-  console.log('About');
 
   return (
     <React.Fragment>
